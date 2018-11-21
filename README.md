@@ -1,5 +1,5 @@
 # ListDemo
 
- - bingding:a simple dataBinding demo used kotlin
+ - master:a simple dataBinding demo used kotlin
  - paging:
 
