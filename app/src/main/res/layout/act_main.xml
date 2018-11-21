@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.example.wanji.listdemo.bean.UserBean" />
+
+        <variable
+            name="handler"
+            type="com.example.wanji.listdemo.ui.ActMain.MainHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.ActMain">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="@{handler.getData}"
+            android:padding="20dp"
+            android:text="@string/getData" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="@{handler::nextData}"
+            android:padding="20dp"
+            android:text="@string/act_lv" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="@{() -> handler.prevData(user)}"
+            android:padding="20dp"
+            android:text="@string/prev" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/defaultdata"
+            android:padding="20dp"
+            android:text="@{user.toString()}" />
+    </LinearLayout>
+</layout>

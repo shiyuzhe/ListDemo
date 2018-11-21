@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListDemo</string>
+    <string name="getData">获取数据</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="defaultdata">defaultData</string>
+    <string name="act_lv">ToActLv</string>
+</resources>
